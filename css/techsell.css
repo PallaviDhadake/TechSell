@@ -291,7 +291,7 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 .imgheight{height:400px !important; overflow:hidden !important;}
 .mainprojht{height:450px !important; overflow:hidden !important;}
 
-.projectbox{position:absolute; height:auto; top:230px; background:#fff; box-shadow: -10px 4px 15px rgba(0,0,0,0.3);}
+.projectbox{position:absolute; height:auto; top:230px; background:rgba(255,255,255,0.8); box-shadow: -10px 4px 15px rgba(0,0,0,0.3); width:370px;}
 .btnview{color:#000; right:15px; font-size:15px;}
 
 .btnview:hover{color:#e06c33;}
