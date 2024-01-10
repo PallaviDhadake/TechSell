@@ -2,7 +2,7 @@
                                                                     Generic CSS
 =======================================================================================================================================*/
 * {
-    font-family: 'DINPro', sans-serif !important;
+   
     border: 0;
     margin: 0;
     padding: 0;
@@ -147,7 +147,7 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 /*===========Header end===============*/
 
 /*============Navigations=============*/
-.logo{width:250px; height:auto}
+.logo{width:220px; height:auto}
 .navbar-brand{display:inline-block !important;}
 .lgName{float:left; margin-top:40px !important; width:180px;}
 #navrbar, #navigationBar{/*position:fixed;*/ z-index:111; top:0; background:#fff !important; width:100% !important; box-shadow: 5px 15px 25px rgba(0,0,0,0.3)}
@@ -207,7 +207,7 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 
 /*============Section Title=============*/
 .section-title {text-align: center; padding-bottom: 30px; color: #294070;}
-    .section-title h2 {font-size: 32px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px; padding-bottom: 20px; position: relative; color: #294070;}
+    .section-title h2 {font-size: 26px; font-weight: bold; text-transform: uppercase; margin-bottom: 15px; padding-bottom: 20px; position: relative; color: #294070;}
         .section-title h2::before {content: ''; position: absolute; display: block; width: 120px; height: 1px;
             background: #ddd; bottom: 1px; left: calc(50% - 60px);}
         .section-title h2::after {content: ''; position: absolute; display: block; width: 40px; height: 3px; background: #EA1A1E; bottom: 0; left: calc(50% - 20px);}
@@ -215,8 +215,8 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 /*==========Button Classes=============*/
 .btnViewMore{background:#326421; color:#ffffff !important; border:1px solid #326421; text-decoration:none; padding:8px 25px !important; border-radius:3px; -moz-transition:0.5s; -o-transition:0.5s; -webkit-transition:0.5s; transition:0.5s; display:inline-block;}
 .btnViewMore:hover{background:none; color:#326421 !important; border:1px solid #326421;}
-.btnEvent{background:none; border:1px solid #212529; padding:10px; cursor:pointer; text-decoration:none; color:#212529;}
-.btnEvent:hover{background:#1e1e1e; color:#fff; transition:0.5s;}
+.btnEvent{background:none; border:1px solid #212529; padding:10px; cursor:pointer; text-decoration:none; color:#212529; border-radius:8px;}
+.btnEvent:hover{background:#1e1e1e; color:#fff; transition:0.5s; }
 .readMore{background:rgba(255,255,255,0.9); letter-spacing:2px; font-size:17px; color:#000 !important; padding:10px !important; border:2px solid #fff; transition:0.5s;}
 .readMore:hover{background:none; color:#fff !important;}
 .buttonForm{background-color:#00a8eb; border:2px solid #fff; color:#fff; font-size:1em; padding:10px 18px; border-radius:2px; cursor:pointer; -webkit-transition:all 0.7s ease; transition:all 0.7s ease; font-weight:400;}
@@ -226,7 +226,6 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 .btnexplore{background:#00b5f0; padding:10px; cursor:pointer; text-decoration:none; color:#fff; font-weight:600}
 .btnexplore:hover{background:#1e1e1e; color:#fff; transition:0.5s;}
 /*==========Button Classes=============*/
-
 
 /*================== aos =======================*/
 #about .container{overflow:hidden !important;}
@@ -299,8 +298,6 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 #projects .carousel-control-next{top:100%;  left:7%;}
 .productimg{position:relative; transition:0.5s;}
  .projectinfo{width: 270px; height: 80px; position:absolute; top:190px; left:25px;/* margin-top:-1000px !important; margin-left:25px; margin-bottom: 5rem; display: inline-flex; align-items: start; justify-content: flex-start; background: #FFFFFF; transition: */ background:#fff; transition:0.5s; box-shadow: -10px 4px 15px rgba(0,0,0,0.3);}
-
-
 .productbx{position:absolute; background:#343333; width:100%; bottom:-3px; color:#fff; font-size:18px; padding:5px;}
 .productoverly{background:rgba(118, 192, 78, 0.2); position:absolute; overflow:hidden;  z-index:1 !important; top:0; left:0; width:100%; height:100%;}
 .moreproduct{position:absolute !important; z-index:2 !important; left:32% !important; top:180px; background:#fff !important;}
@@ -315,11 +312,72 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 .testinfobg{background:rgba(255, 255, 255, 0.5); height:inherit;}
 /*====================Projects Deatils====================*/
 
+/*===================Value Added Products================*/
+.bgvalueadded{background:url("../images/value-products-bg.jpg") no-repeat center center; background-size: cover; width: 100%;}
+
+/*===================Value Added Products================*/
+
+/*===================Video Gallery starts================*/
+.video-container{display:table;	width:100%}
+.video-box{display:table-cell; vertical-align:middle; width:100%; position:relative; height:500px}
+.YTPOverlay{background:rgba(30, 31, 33, 0.4); position:absolute; z-index:555; top:0; left:0; width:100%; height:100%}
+.inner-video{position:absolute; z-index:0;	min-width:100%; min-height:100%; left:0; top:0; overflow:hidden; opacity:1; height:350px}
+.container{position:relative; z-index:5;}
+.dis-block{display:block;}
+.vidAnch{text-decoration:none; background-color:transparent; border:2px solid #fff; display:inline-block; padding:12px 22px; color:#fff; -webkit-transition:all 0.7s ease; -moz-transition:all 0.7s ease; -o-transition:all 0.7s ease; transition:all 0.7s ease;}
+.vidAnch:hover{background:#fff; color:#0090d4;}
+.videobg{background:url("../images/video-bg.jpg"); background-size:cover; width:100% !important; height:500px; box-shadow: inset 0 0 0 2000px rgba(30, 31, 33, 0.4);}
+/*===================Video Gallery ends================*/
+
 /*=====================stats==============================*/
 .bgstat {background: url("../images/business-partners.jpg") no-repeat center center; background-size: cover; width: 100%;}
-.count-num{font-size:3.5em; font-weight:600; display:block; color:#0a0909; margin-top:20px;}
+.count-num{font-size:2.2em;  display:block; color:#0a0909; margin-top:20px;}
 .statBox{padding:20px 8px;  box-shadow:-2px -2px 8px rgba(255,255,255,1), -2px -2px 12px rgba(255,255,255,0.5), inset 2px 2px 4px rgba(255,255,255,0.1), 2px 2px 8px rgba(0,0,0,0.15);}
+.bgQBox{background:linear-gradient(120deg, #20558A, #6F90B8, #fc2a21); width:100%; background-size:400%; -moz-animation: bgqboxanimation 8s infinite; -o-animation: bgqboxanimation 8s infinite; -webkit-animation: bgqboxanimation 8s infinite; animation: bgqboxanimation 8s infinite;}
 
+@-moz-keyframes bgqboxanimation{
+	0%
+	{
+		background-position: 0 50%;
+	}
+	50%
+	{
+		background-position: 100% 50%;
+	}
+	100%
+	{
+		background-position: 0 50%;
+	}
+}
+
+@-webkit-keyframes bgqboxanimation{
+	0%
+	{
+		background-position: 0 50%;
+	}
+	50%
+	{
+		background-position: 100% 50%;
+	}
+	100%
+	{
+		background-position: 0 50%;
+	}
+}
+@keyframes bgqboxanimation{
+	0%
+	{
+		background-position: 0 50%;
+	}
+	50%
+	{
+		background-position: 100% 50%;
+	}
+	100%
+	{
+		background-position: 0 50%;
+	}
+}
 /*=====================stats==============================*/
 
 /*====================testimonials start===================*/
@@ -360,17 +418,15 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 .footerBg{background:#d4d4d4 url(../images/footer-idss.jpg) no-repeat center center; width:100%;background-size:cover;}
 .bgfooter{background:#efeeeb;}
 .intellect{text-decoration:none; color:#7f888b; font-weight:600;}
-.intellect:hover{color:#76c04e;}
+.intellect:hover{color:#c12a20;}
 .clr555{color:#555;}
 .footer{background:#1e1e1e;}
 .footer span{display:block; color:#7f888b;}
-.footerCaption{font-size:1.4em; line-height:1.5; color:#fff;}
+.footerCaption{font-size:1.4em; line-height:1.5; color:#383636;}
 .footerNav{list-style:none}
 .footerNav li{padding-left:0 !important;}
-.footerNav li a{text-decoration:none;display:inline-block; margin-left:-22px !important; color:#7f888b; font-size:0.9em; line-height:1.3 !important; font-weight:400;}
-.footerNav li a:hover{color:#00b5f0;}
-.intellect{text-decoration:none; color:#7f888b; font-weight:600;}
-.intellect:hover{color:#76c04e;}
+.footerNav li a{text-decoration:none;display:inline-block; margin-left:-22px !important; color:#181a1a; font-size:0.9em; line-height:1.3 !important; font-weight:400;}
+.footerNav li a:hover{color:#3e4095;}
 .footerLine{background:#61696c; width:100%; height:1px; display:block;}
 .fLine{position:relative; background:#61696c; width:90%; height:1px; display:block;}
 .fAbsLine{position:absolute; left:0; top:-1px; background:#C6C5B9; width:70px; height:2px; display:block;}
@@ -383,10 +439,10 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 /*======================footer=============================*/
 
 /*================= footer contact info=====================*/
-.addr{background:url("../images/icons/location.png") no-repeat top left; display:block; padding-left:34px; font-weight:400; color:#7f888b;}
-.email{background:url("../images/icons/mail.png") no-repeat top left; display:block; text-decoration:none; padding-left:34px;  font-weight:400; color:#7f888b;}
+.addr{background:url("../images/icons/location.png") no-repeat top left; display:block; padding-left:34px; font-weight:400;}
+.email{background:url("../images/icons/mail.png") no-repeat top left; display:block; text-decoration:none; padding-left:34px;  font-weight:400; color:#181a1a;}
 .email:hover{color:#7f888b;}
-.foo_call{background:url("../images/icons/call.png") no-repeat top left; display:block; text-decoration:none; padding-left:34px; font-weight:400; color:#7f888b; }
+.foo_call{background:url("../images/icons/call.png") no-repeat top left; display:block; text-decoration:none; padding-left:34px; font-weight:400; color:#181a1a;}
 .foo_call:hover{color:#7f888b;}
 .breakWord{word-wrap:break-word;}
 /*================= footer contact info=====================*/
@@ -500,26 +556,9 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 #products .swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
 
 /*Feature Produts slider*/
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.swiper {width: 100%; height: 100%;}
+.swiper-slide {text-align: center; font-size: 18px; background: #fff; display: flex; justify-content: center; align-items: center;}
+.swiper-slide img {display: block; width: 100%; height: 100%; object-fit: cover;}
 /*Feature Product Slider*/
 
 /*==========================Event Gallery Page=======================*/
@@ -564,8 +603,8 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 @media (max-width: 920px) 
 {
     .width50{width:100% !important;}
-    #banner .col-10 .xxx-large{font-size:45px !important}
-    #product .col-md-4 .xx-large {font-size: 40px !important;}
+   /* #banner .col-10 .xxx-large{font-size:45px !important}
+    #product .col-md-4 .xx-large {font-size: 40px !important;}*/
     #product .swiper-wrapper .swiper-slide {width: 55% !important;}
     .moreproduct{display:none}
 }
@@ -579,13 +618,13 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 }
 @media (max-width: 640px) 
 {
-    #banner .col-10 .xxx-large{font-size:40px !important}
-    #banner .col-10 .regular{font-size:12px !important}
+   /* #banner .col-10 .xxx-large{font-size:40px !important}
+    #banner .col-10 .regular{font-size:12px !important}*/
     .bannerht{height:245px !important;}
 }
 @media (max-width: 540px) 
 {
-     #banner .col-10 .xxx-large{font-size:30px !important}
+     /*#banner .col-10 .xxx-large{font-size:30px !important}*/
     .bannerht{height:200px !important;}
 }
 @media (max-width: 500px) 
@@ -599,11 +638,14 @@ body {overflow-x:hidden; overflow-y:auto !important; overflow:initial;}
 @media (max-width: 414px) 
 {
     #product .swiper-wrapper .swiper-slide {width: 100% !important;}
-     #banner .col-10 .xxx-large{font-size:25px !important;}
+     /*#banner .col-10 .xxx-large{font-size:25px !important;}*/
      #banner .col-10 .regular{display:none;}
     .bannerht{height:170px !important;}
-    #banner .row {margin-left:40px !important;}
+    /*#banner .row {margin-left:40px !important;}*/
     .productvideo{width:300px!important;}
+    .projectbox{left:0; top:180px;}
+   .ph1{display:none} 
+   .ph2{display:none}
    
 }
 
