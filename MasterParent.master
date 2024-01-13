@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterParent.master.cs" Inherits="MasterParent" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mixed Note Value Counter, Fake Note Detector, Dealer in Sangli Kolhapur | TechSell</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Varela+Round&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link href="Vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="Vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <%-- FancyBox --%>
+     <script src="<%=rootPath + "js/jquery-2.2.4.min.js" %>"></script>
+    <link href="<%=rootPath + "css/jquery.fancybox.css" %>" rel="stylesheet" />
+    <script src="<%=rootPath + "js/jquery.fancybox.js" %>" ></script>
+
+    <!-- Swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--Animate Css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Ytp Player -->
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+
+    <!-- Main Css -->
+    <link href="css/techsell.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <section id="navrbar">
+        <!-- Header Starts -->
+        <div class="header">
+            <div class="p-1">
+                <div class="container-fluid">
+                    <div class="socialBox">
+                        <a href="#" target="_blank" class="topFb" title="Follow Us on facebook"></a>
+                        <a href="#" target="_blank" class="topInsta" title="Follow Us on Instagram"></a>
+                        <a href="#" target="_blank" class="topyouTube" title="Follow Us on twitter"></a>
+                    </div>
+                    <a href="tel:+91-233 2620659" class="colorWhite text-decoration-none me-3">+91-233 2620659</a>
+                    <a href="tel:+91-9422406963" class="colorWhite text-decoration-none me-3 ph1">+91-9422406963</a>
+                    <a href="tel:+91-9326406969" class="colorWhite text-decoration-none ph2">+91-9326406969</a>
+                </div>
+            </div>
+        </div>
+        <!-- Header End  -->
+        <!-- Navigations start -->
+        <div id="navigationBar">
+            <div class="container-fluid">
+                <div class="p-2">
+                    <nav class="navbar navbar-expand-xl m-0 p-0">
+                        <div class="container-fluid m-0 p-0">
+                            <a class="navbar-brand" href="#">
+                                <img src="images/techsell-logo.png" class="img-fluid logo" />
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <img src="images/icons/social/nav-btn-color.png" />
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <!-- Navigation starts -->
+                                <ul class="navbar-nav ms-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Products</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Clients</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Awards</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Enquiry</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navigations End -->
+    </section>
+
+    <form id="form1" runat="server">
+        <div>
+            <div>
+                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+     <!-- Footer start -->
+        <section id="footer" class="shadow">
+            <span class="greyLine"></span>
+            <div class="bg-white">
+                <div class="container-fluid">
+                    <div class="p-3">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <span class="semiBold semiMedium clrmediumgrey">TechSell - Tushar Enterprises</span>
+                                <img src="images/techsell-logo.png" class="img-fluid logo mt-2" />
+                            </div>
+                            <div class="col-lg-4">
+                                <h4 class="footerCaption  mb-2 semiBold upperCase letter-sp-2">Navigation</h4>
+                                <ul class="footerNav">
+                                    <li><a href="<%=rootPath %>">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Clients</a></li>
+                                    <li><a href="#">Awards</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Enquiry</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4">
+                                <h4 class="footerCaption clrWhite mb-2 semiBold upperCase letter-sp-2">Contact Info</h4>
+                                <span class="addr line-ht-5 small">
+                                    Gala No.3,37 Digambar Jain Boarding,
+                                    Mahavirnagar, Sangli - 416416.
+                                </span>
+                                <span class="space15"></span>
+                                <a href="#" class="email breakWord line-ht-5 small txtDecNone">san_tusharent@yahoo.com</a>
+                                <span class="space15"></span>
+                                <a href="+919326406969" class="foo_call line-ht-5 small txtDecNone">+91 9326406969</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bgfooter">
+                <div class="container-fluid">
+                    <div class="p-3">
+                        <span class="mrg_B_5 small fontRegular">&copy; <%=Currentyear %> | Techsell , All Rights Reserved</span>
+                        <span class="small fontRegular">Website By <a href="http://www.intellect-systems.com" target="_blank" class="intellect" title="Website Design and Development Service By Intellect Systems">Intellect Systems</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer end -->
+        <!-- Products slider start -->
+</body>
+</html>
