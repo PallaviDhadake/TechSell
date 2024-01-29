@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Awards" Language="C#" MasterPageFile="~/MasterParent.master" AutoEventWireup="true" CodeFile="Awards.aspx.cs" Inherits="Awards" %>
+﻿<%@ Page Title="Awards" Language="C#" MasterPageFile="~/MasterParent.master" AutoEventWireup="true" CodeFile="awards.aspx.cs" Inherits="awards" %>
 <%@ MasterType VirtualPath="~/MasterParent.master" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
@@ -16,7 +16,7 @@
     </div>
     <span class="space30"></span>
     <div class="container text-center">
-        <div class="row" id="awards">
+        <div class="row gy-3" id="awards">
             <div class="col-md-4">
                 <div class="imgborder">
                     <a href="images/awards/award-1.jpg" data-fancybox="group1">

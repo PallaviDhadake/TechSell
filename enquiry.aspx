@@ -18,10 +18,16 @@
         <%--<h2 class="semiBold mb-1">Enquiry</h2>--%>
         <%--<span class="fontRegular clrGrey line-ht-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit,</span>--%>
 
+
+
         <span class="space30"></span>
         <div class="row">
             <div class="col-md-8">
                 <div class="p-4">
+
+                    <%=prMarkup %>
+                    <span class="space10"></span>
+
                     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
                         <ContentTemplate>
                             <div class="form-row">
@@ -35,30 +41,31 @@
                                     <asp:TextBox ID="txtEmail" class="conTextBox" placeholder="Email *" runat="server"></asp:TextBox>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <asp:TextBox ID="txtPhone" class="conTextBox" placeholder="Mobile No *" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtMobile" class="conTextBox" placeholder="Mobile No *" runat="server"></asp:TextBox>
                                 </div>
                                 </div>
                                
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-md-12">
-                                    <asp:TextBox ID="txtCompName" class="conTextBox" placeholder="Comapny Name *" runat="server"></asp:TextBox>
+                                    <asp:TextBox ID="txtCompany" class="conTextBox" placeholder="Comapny Name *" runat="server"></asp:TextBox>
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <asp:TextBox ID="txtAdd" class="conTextBox" placeholder="Address " runat="server"></asp:TextBox>
-                                </div>
-                            </div>
-                            <div class="form-row">
+                             <div class="form-row">
                                 <div class="row">
-                                    <div class="form-group col-md-6">
+                                    <div class="form-group col-md-12">
                                         <asp:TextBox ID="txtCity" class="conTextBox" placeholder="City *" runat="server"></asp:TextBox>
                                     </div>
-                                    <div class="form-group col-md-6">
+                                   <%-- <div class="form-group col-md-6">
                                         <asp:TextBox ID="txtCountry" class="conTextBox" placeholder="Country *" runat="server"></asp:TextBox>
-                                    </div>
+                                    </div>--%>
                                 </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <asp:TextBox ID="txtAddress" TextMode="MultiLine" Height="150" class="conTextBox" placeholder="Address *" runat="server"></asp:TextBox>
+                                </div>
+                            </div>
+                           
                             </div>
                            
                            <%-- <div class="form-group">
@@ -73,9 +80,9 @@
 
                                 </div>
                             </div>--%>
-                           <%-- <div class="form-group">
-                                <asp:TextBox ID="txtMsg" class="conTextBox" TextMode="MultiLine" Height="150" placeholder="Message *" runat="server"></asp:TextBox>
-                            </div>--%>
+                            <div class="form-group">
+                                <asp:TextBox ID="txtMessage" class="conTextBox" TextMode="MultiLine" Height="150" placeholder="Message *" runat="server"></asp:TextBox>
+                            </div>
                             <span class="space20"></span>
                             <asp:Button ID="btnSubmit" CssClass="buttonForm text-uppercase" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
                         </ContentTemplate>
@@ -85,7 +92,7 @@
             </div>
             <div class="col-md-4">
                 <div class="p-4">
-                    <img src="images/icon.svg" class="img-fluid w-100" />
+                    <img src="<%=Master.rootPath + "images/icon.svg" %>" class="img-fluid w-100" />
                 </div>
             </div>
         </div>

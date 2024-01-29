@@ -21,7 +21,7 @@
 
     <!-- aos -->
     <script src="js/jquery-2.2.4.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Swiper slider -->
@@ -61,7 +61,7 @@
                 <div class="p-2">
                     <nav class="navbar navbar-expand-xl m-0 p-0">
                         <div class="container-fluid m-0 p-0">
-                            <a class="navbar-brand" href="#">
+                            <a class="navbar-brand" href="<%=rootPath %>">
                                 <img src="images/techsell-logo.png" class="img-fluid logo" />
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,28 +71,28 @@
                                 <!-- Navigation starts -->
                                 <ul class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                                        <a class="nav-link" aria-current="page" href="<%=rootPath%>">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">About Us</a>
+                                        <a class="nav-link" aria-current="page" href="about-us">About Us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Products</a>
+                                        <a class="nav-link" href="product">Products</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <%--<li class="nav-item">
                                         <a class="nav-link" href="#">Clients</a>
+                                    </li>--%>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="awards">Awards</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Awards</a>
+                                        <a class="nav-link" href="news">News</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">News</a>
+                                        <a class="nav-link" href="enquiry">Enquiry</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Enquiry</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact Us</a>
+                                        <a class="nav-link" href="contact-us">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -212,27 +212,8 @@
                     <div class="row">
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="#" class="text-decoration-none">
-                                        <img src="images/maxvell-mx-100-ipro.jpg" class="d-block w-100 img-fluid" alt="...">
-                                        <div class="px-4" style="width:200px;">
-                                            <div class="projectbox">
-                                                <div class="">
-                                                    <div class="p-3">
-                                                        <p class="semiBold semiMedium mb-2 colorSec">MX-100i PRO +</p>
-                                                        <p class="fontRegular clrdarkgrey mb-2">
-                                                            Automatic start, stop and clear with UV, MG, MT, IR, 3D Color detection while counting.
-                                                            <span class="space15"></span>
-                                                            <span href="" class="btnEvent">Brochure</span>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                </div>
-                                <div class="swiper-slide">
+                                <%=GetProjectsData() %>
+                                <%--<div class="swiper-slide">
                                     <a href="#" class="text-decoration-none">
                                         <img src="images/maxvell-mx-100-ipro.jpg" class="d-block w-100 img-fluid" alt="...">
                                         <div class="px-4" style="width:200px;">
@@ -289,11 +270,34 @@
                                         </div>
                                     </a>
                                 </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="text-decoration-none">
+                                        <img src="images/maxvell-mx-100-ipro.jpg" class="d-block w-100 img-fluid" alt="...">
+                                        <div class="px-4" style="width:200px;">
+                                            <div class="projectbox">
+                                                <div class="">
+                                                    <div class="p-3">
+                                                        <p class="semiBold semiMedium mb-2 colorSec">MX-100i PRO +</p>
+                                                        <p class="fontRegular clrdarkgrey mb-2">
+                                                            Automatic start, stop and clear with UV, MG, MT, IR, 3D Color detection while counting.
+                                                            <span class="space15"></span>
+                                                            <span href="" class="btnEvent">Brochure</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>--%>
                             </div>
                             <span class="space80"></span>
-                            <span class="space80"></span>
+                            <%--<span class="space80"></span>--%>
                             <span class="space60"></span>
                             <div class="swiper-pagination"></div>
+                        </div>
+                         <span class="space30"></span>
+                        <div class="text-center">
+                            <a href="#" class="btnViewMore">View More</a>
                         </div>
                     </div>
                 </div>
@@ -335,7 +339,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item">
+                                <%--<div class="carousel-item">
                                     <div class="row g-0">
                                         <div class="col-lg-7">
                                             <img src="images/slide/maxsell-mx12a2-sangli.jpg" class="img-fluid w-100" />
@@ -382,16 +386,16 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>--%>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                           <%-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
-                            </button>
+                            </button>--%>
                         </div>
                     </div>
                     <span class="space50"></span>
@@ -406,7 +410,8 @@
                     <h2 class="pageH1 txt_center">News</h2>
                 </div>
                 <div class="row gy-3">
-                    <div class="col-lg-4">
+                    <%=GetNewsData() %>
+                    <%--<div class="col-lg-4">
                         <div class="newsImg">
                             <img src="images/products/project-8.jpeg" class="img-fluid rounded mb-3 newsImg" />
                         </div>
@@ -435,7 +440,11 @@
                         <h3 class="nwstitle semiBold semiMedium mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
                         <p class="fontRegular small line-ht-5">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <a href="#" class="colorPrime text-decoration-none">Read More</a>
-                    </div>
+                    </div>--%>
+                </div>
+                <span class="space30"></span>
+                <div class="text-center">
+                    <a href="#" class="btnViewMore">View More</a>
                 </div>
             </div>
         </section>
@@ -546,13 +555,13 @@
                                 <h4 class="footerCaption  mb-2 semiBold upperCase letter-sp-2">Navigation</h4>
                                 <ul class="footerNav">
                                     <li><a href="<%=rootPath %>">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Products</a></li>
-                                    <li><a href="#">Clients</a></li>
-                                    <li><a href="#">Awards</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Enquiry</a></li>
-                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="about-us">About Us</a></li>
+                                    <li><a href="product">Products</a></li>
+                                    <%--<li><a href="c">Clients</a></li>--%>
+                                    <li><a href="awards">Awards</a></li>
+                                    <li><a href="news">News</a></li>
+                                    <li><a href="enquiry">Enquiry</a></li>
+                                    <li><a href="contact-us">Contact us</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-4">

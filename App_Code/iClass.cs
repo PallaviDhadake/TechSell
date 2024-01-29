@@ -39,7 +39,7 @@ public class iClass : IDisposable
     /// <returns>connection string</returns>
     public string OpenConnection()
     {
-        return System.Web.Configuration.WebConfigurationManager.ConnectionStrings["SamruddhiData"].ConnectionString;
+        return System.Web.Configuration.WebConfigurationManager.ConnectionStrings["TusharEntData"].ConnectionString;
     }
 
     /// <summary>

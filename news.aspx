@@ -15,10 +15,11 @@
         </div>
     </div>
     <%--  --%>
-    <span class="space30"></span>
+    <span class="space40"></span>
     <div class="container">
     <div class="row gy-2">
-        <div class="col-md-4">
+        <%=newsstr %>
+        <%--<div class="col-md-4">
             <img src="images/value-products-bg.jpg" class="img-fluid w-100" />
         </div>
         <div class="col-md-8">
@@ -51,7 +52,7 @@
             <span class="clrGrey small fst-italic">14/02/2023</span>
             <p class="fontRegular light  line-ht-7 mt-3 mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             <a href="#" class="btnexplore">Explore</a>
-        </div>
+        </div>--%>
     </div>
         </div>
 </asp:Content>
